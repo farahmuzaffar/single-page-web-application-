@@ -1,0 +1,828 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    width: 100%;
+}
+.imgDiv{
+    position: absolute;
+    z-index: -1;
+    /* display: none; */
+}
+
+.imgDiv img{
+    width:100% ;
+    display:block;
+}
+.header{
+    width: 100%;
+}
+.headerTopDiv{
+    width: 100%;
+    height: 52px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212121;
+}
+.socialIconDiv{
+    width: 200px;
+    height:100%;
+    display: flex;
+    align-items:center ;
+    padding-left: 22px;
+    gap: 5px;
+}
+
+.circleIcon{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color:#303030;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.phoneIconDiv{
+    width: 542px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.phoneIconDiv p{
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 1px;
+}
+.phoneIconDiv .callBtn{
+margin-left: 10px;
+padding:6px 8px ;
+border-radius: 2px;
+border: none;
+outline: none;
+background-color: #a2d84c;
+font-size: 12px;
+font-weight: 600;
+}
+.navBar{
+    width: 100%;
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    background-color: white;
+}
+.navBar img{
+    margin-left: 32px;
+    width: 143px;
+}
+.navList {
+    height: 100%;
+    width: 809px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    /* display: none; */
+}
+.navList li{
+    list-style:none;
+    display: flex;
+}
+.navList li a{
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    color: black;
+}
+.sliderImgDiv{
+    width: 100%;
+    height: 488px;
+}
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+  .img-content{
+    width: 100%;
+    height: 232px;
+    position: absolute;
+    top:150px;
+    left: 0;
+}
+.img-contentTopDiv{
+    display: flex;
+    justify-content: space-between;
+}
+.leftDiv{
+    width: 325px;
+    height: 69px;
+    background-color: #8dc73f;
+}
+
+.rightDiv{
+    width: 325px;
+    height: 69px;
+    background-color: #8dc73f;
+}
+.img-content h1{
+    font-size: 64px;
+    color: white;
+}
+.img-contentBottomDiv{
+    width: 100%;
+    height: 131px;
+    margin-top: 25px;
+    text-align: center;
+}
+.img-contentBottomDiv pre{
+    font-size: 21px;
+    color: white;
+}
+.buttonDiv button{
+    margin-top: 34px;
+    font-size: 17px;
+    padding: 11px 38px;
+    border:none;
+    outline: none;
+    background-color: #febd19;
+    font-weight: 600;
+    border-radius: 6px;
+}
+.advantageDiv{
+    width: 100%;
+    height: 459px;
+    background-color: white;
+}
+.adv-top{
+    width: 100%;
+    height: 122px;
+    text-align: center;
+}
+.adv-top h1{
+    font-size: 42px;
+    margin-top: 30px;
+    color: #668e19;
+}
+.sp1{
+    color: black;
+}
+.advantageDiv pre{
+    margin-top: 10px;
+    font-size: 14px;
+    color: #c4c2c2;
+}
+.bottomIcons{
+    width: 100%;
+    height: 243px;
+    margin-top: 8px;
+    padding-left: 54px;
+    display: flex;
+    gap: 34px;
+}
+.iconsDiv{
+height: 100%;
+width: 200px;
+text-align: center;
+}
+.roundDiv{
+    width: 157px;
+    height: 157px;
+    border-radius: 50%;
+    background-color: #f2f2f2;
+    margin: auto;
+    display: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        box-shadow: 0  0 8px 0 rgba(0,0,0,0.2)
+    }
+}
+.iconH1{
+font-size:16px ;
+margin-top:16px ;
+font-weight:600 ;
+}
+.iconsDiv p{
+    margin-top: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #cbc7c7;
+}
+.aboutUs_Div{
+width: 100%;
+height: 433px;
+background-image: url('./pics/about.jpg');
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+}
+.aboutUs_Div h1{
+    color: #668e19;
+    font-size: 43px;
+    font-weight: 600;
+    margin-top: -1px;
+}
+.aboutUs_Div .paraDiv {
+    margin-top: 26px;
+    margin-left: 75px;
+    width: 480px;
+    height: 215px;
+}
+.aboutUs_Div .paraDiv p{
+    color:black ;
+    font-size: 13px;
+    font-weight:600;
+    margin-bottom: 13px;
+}
+.aboutUs_Div .buttonDiv{
+    margin-left:3px;
+    margin-top: 21px;
+}
+.servicesDiv{
+    width: 100%;
+    height: 441px;
+    border: 2px solid transparent;
+    background-color: white;
+}
+.servicesDiv h1{
+    margin-top: 34px;
+    font-size: 39px;
+    font-weight: 600;
+    color: #668e19;
+}
+.servicesDiv pre{
+    margin-top:10px ;
+    font-size: 14px;
+    font-weight: 600;
+    color:#cbc7c7;
+}
+.servicesBottomDiv{
+width: 100%;
+height: 264px;
+display: flex;
+gap:17px;
+padding-left: 75px;
+}
+.starCardDiv {
+    position: relative;
+    margin-top: 61px;
+    height: 200px;
+    width: 261px;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #f2f2f2;
+    transition: all 0.3 ease-in-out;
+
+
+    &:hover{
+        box-shadow: 0 0 8px 0 rgba(0,0,0,0.2);
+        transform: scale(1.03);
+    }
+}
+.roundstar {
+    position: absolute;
+    top: -37px;
+    left: 94px;
+    height: 72px;
+    width: 72px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #febd19;
+}
+.starCardDiv h1{
+    font-size: 15px;
+    margin-top: 58px;
+    font-weight: 600;
+    color: black;
+}
+.starCardDiv pre{
+    font-size: 14px;
+    margin-top: 4px;
+    font-weight: 600;
+    color: rgb(155,154,154);
+    margin-bottom: 16px;
+}
+.starCardDiv a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #8ec63f
+}
+.portfolioDiv{
+height: 685px;
+width: 100%;
+border: 2px solid transparent;
+text-align: center;
+background-color: black;
+}
+.portfolioTopDiv{
+width: 100%;
+height: 186px;
+border: 2px solid transparent;
+text-align: center;
+}
+.portfolioTopDiv h1{
+    font-size:42px ;
+    font-weight: 600;
+    color:#668e19;
+    margin-top: 32px;
+}
+.portfolioTopDiv pre{
+    font-size:12px ;
+    font-weight: 600;
+    color: #cbc7c7;
+    margin-top: 11px;
+}
+.portfolioTopDiv ul{
+border: 2px solid transparent;
+height: 66px;
+display: flex;
+gap: 20px;
+justify-content: center;
+align-items:center ;
+}
+.portfolioTopDiv ul li{
+    list-style: none;
+    display: inline-block;
+}
+.portfolioTopDiv ul li a{
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 600;
+    color:white;
+
+    &:hover{
+        color: #febd19;
+    }
+}
+.portfolioBottomDiv{
+    width: 100%;
+    height: auto;
+    border: 2px solid transparent;
+    display: grid;
+    justify-content: center;
+    grid-template-columns:auto auto auto auto auto ;
+    grid-template-rows: auto auto;
+}
+.portfolioBottomDiv .portCard{
+width: 217px;
+height: 217px;
+border: 2px solid transparent;
+display: flex;
+justify-content: center;
+align-items: center;
+transition: all 0.3s ease-in-out;
+}
+.portCard:hover{
+    background-color:#ef4136 ;
+}
+
+.c1{
+    background-color: #ffffff;
+}
+.c2{
+    background-color: #5e5e5e;
+}
+.c3{
+background-color:#d2d3d5 ;
+}
+.c4{
+background-color: #838383;
+}
+.c5{
+background-color:#ffffff;
+}
+.c6{
+background-color:#a3a3a3 ;
+}
+.c7{
+background-color:#d1d2d4 ;
+}
+.c8{
+background-color:#ffffff ;
+}
+.c9{
+background-color:#838383 ;
+}
+.c10{
+    background-color:#5e5e5e ;
+}
+.processDiv{
+    width: 100%;
+    height: 471px;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: white;
+}
+.processDiv h1{
+    font-size:41px ;
+    font-weight: 600;
+    color:#668e19;
+    margin-top: 69px;
+}
+.processDiv pre{
+    font-size:12px ;
+    font-weight: 600;
+    color: #cbc7c7;
+    margin-top: 11px;
+    margin-bottom: 35px;
+}
+.processIconsDiv{
+    width: 1088px;
+    height: 229px;
+    border: 2px solid transparent;
+    margin: auto;
+    display: flex;
+    gap: 49px;
+    overflow: hidden;
+}
+.processIconsDiv .iconDiv{
+    width: 142px;
+    height: 100%;
+    border: 2px solid transparent;
+    background-color: white;
+}
+.processIconsDiv .iconDiv .circleDiv{
+    margin: auto;
+    width: 132px;
+    height: 132px;
+    border-radius: 50%;
+    border: 4px solid #d1d2d4;
+    margin-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.processIconsDiv .iconDiv .circleDiv::after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left:100%;
+    height: 4px;
+    width: 66px;
+    background-color:#d1d2d4;
+}
+.countRoundDiv{
+position: absolute;
+top: -19px;
+margin: auto;
+height: 32px;
+width: 32px;
+border-radius: 50%;
+border: 4px solid transparent;
+background-color: #febd19;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 20px;
+font-weight: 600;
+}
+.iconDiv h1{
+font-size: 14px;
+font-weight: 600;
+margin-top: 20px;
+color: #090909;
+}
+.iconDiv pre{
+    font-size: 13px;
+    margin-top: 14px;
+ }
+ .aboutDiv{
+    height: 502px;
+    width: 100%;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: #f2f2f2;
+ }
+ .aboutDiv h1{
+    font-size:41px ;
+    font-weight: 600;
+    color:#668e19;
+    margin-top: 31px;
+}
+.aboutDiv pre{
+    font-size:14px ;
+    font-weight: 600;
+    color: #cbc7c7;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.peopleReviewsDiv{
+border: 2px solid transparent;
+display: grid;
+justify-content: center;
+grid-template-columns: auto auto;
+grid-template-rows: auto auto;
+}
+.peopleReviewsDiv .review{
+width: 541px;
+height: 132px;
+border: 2px solid transparent;
+display: flex;
+}
+.peopleReviewsDiv .review .profileDiv{
+width: 100px;
+height: 100px;
+border: 2px solid transparent;
+border-radius: 50%;
+margin-top: 15px;
+margin-left: 15px;
+}
+.profileDiv img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+
+}
+.reviewrightDiv{
+    height: 100%;
+    width:360px;
+    margin-left: 4px;
+    border: 2px solid transparent;
+    text-align: left;
+}
+.reviewrightDiv h1{
+    font-size:16px ;
+    font-weight: 600;
+    color:#000000;
+    margin-top: 9px;
+    margin-left: 1px;
+}
+.reviewrightDiv pre{
+    font-size:14px ;
+    font-weight: 600;
+    color: #000000;
+    margin-top: 10px;
+    margin-bottom: 35px;
+}
+.skillsDiv{
+width: 100%;
+height: 457px;
+border: 2px solid transparent;
+text-align: center;
+background-color: white;
+}
+.skillsDiv h1{
+    font-size: 42px;
+    font-weight:600;
+    color: #668e19;
+    margin-top: 38px;
+}
+.skillsDiv pre{
+    font-size: 14px;
+    font-weight:600;
+    color: black;
+    margin-top: 8px; 
+}
+.circleProgressDiv{
+width: 910px;
+height: 236px;
+border: 2px solid transparent;
+margin: auto;
+margin-top:37px;
+display: flex;
+gap: 58px;
+}
+.borderCircle {
+    width: 162px;
+    height: 162px;
+    margin-top: 13px;
+    margin-left: 11px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.topBorderCircle{
+    width: 184px;
+    height: 184px;
+    border-radius: 50%;
+    position: absolute; 
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.innerBorderCircle{
+width: 125px;
+height: 125px;
+border-radius: 50% ;
+background: white;
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: 26px;
+font-weight: 800;
+
+}
+.progressCard{
+width: 180px;
+height: 100%;
+text-align: center;
+border: 2px solid transparent;
+}
+.progressCard h1{
+    margin-top:32px;
+    font-size: 17px;
+    font-weight: 600;
+    color: black;
+}
+.contactDiv{
+    width: 100%;
+    height: 319px;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: #8dc73f;
+}
+.contactDiv h1{
+font-size: 58px;
+font-weight: 600;
+margin-top: 45px;
+color: white;
+}
+.contactInputDiv{
+    width: 950px;
+    height: 58px;
+    border: 2px solid transparent;
+    margin: auto;
+    margin-top: 30px;
+    text-align: left;
+    display: flex;
+    gap: 15px;
+}
+.contactInputDiv input{
+    width: 230px;
+    height: 47px;
+    border:none;
+    padding-left: 12px;
+    font-size: 20px;
+    border-radius: 8px;
+}
+.contactInputDiv button{
+    width:182px ;
+    height: 46px;
+    background-color: #febd19;
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 22px;
+    border-radius:8px ;
+    border: none;
+    outline: none;
+}
+.contactDiv pre{
+    margin-top: 25px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+}
+.contactUsDiv{
+    width: 100%;
+    height: 605px;
+    border: 2px solid transparent;
+    text-align: center;
+    background-color: white;
+}
+.contactUsDiv h1{
+margin-top: 36px;
+font-size: 41px;
+font-weight: 600;
+}
+.contactUsDiv pre{
+    margin-top: 9px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #bdbec1;
+    margin-bottom: 22px;
+}
+.mapH1{
+    width: 902px;
+    height: 35px;
+    border: 2px solid transparent;
+    margin: auto;
+    display: flex;
+}
+.mapIcon{
+width: 32px;
+height: 32px;
+border: 2px solid transparent;
+}
+.mapH1 p{
+text-align: left;
+margin-left: 10px;
+margin-top: 2px;
+font-size: 22px;
+font-weight: 600;
+
+}
+.mapPhoneDiv{
+width: 762px;
+height: 30px;
+border: 2px solid transparent;
+margin: auto;
+text-align: left;
+display: flex;
+align-items: center;
+
+}
+.mapPhoneDiv p{
+font-size: 25px;
+font-weight: 600;
+}
+.googleMap{
+width: 100%;
+height: 352px;
+border: 2px solid transparent;
+margin-top: 40px;
+}
+/* .googleMap iframe{
+    width: 100%;
+    height: 100%;
+} */
+.googleMap img{
+    width: 100%;
+    height: 100%;
+}
+footer{
+    width: 100%;
+    height: 342px;
+    border: 2px solid transparent;
+    padding-top: 45px;
+    display: flex;
+    background-color: #678e19;
+}
+.footerfirstDiv {
+    width: 223px;
+    height: 260px;
+    border: 2px solid transparent;
+    margin-left: 79px;
+}
+.footerfirstDiv img {
+    width: 145px;
+}
+.footerfirstDiv pre{
+    margin-top: 14px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 14px;
+    color: white;
+}
+.footerfirstDiv .copyRight{
+    margin-top: 59px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left:11px ;
+}
+.footerSecDiv{
+width:198px ;
+height: 236px;
+border: 2px solid transparent;
+display: flex;
+flex-direction: column;
+row-gap: 10px;
+border-right: 2px solid #7bad2d;
+
+}
+.footerSecDiv h1{
+    margin-top: 3px;
+    font-size: 22px;
+    color: white;
+
+}
+.footerSecDiv ul{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.footerSecDiv ul li{
+    list-style: none;
+    display: inline-block;
+    margin-left: 2px;
+    font-weight: 600;
+    color: white;
+}
+.footerSecDiv ul li a{
+    color: white;
+}
+.footerSecDiv p{
+    color: white;
+    font-size: 15px;
+    
+}
